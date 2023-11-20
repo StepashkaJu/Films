@@ -1,8 +1,11 @@
+import { Header } from "./layout/Header";
+import React from "react";
 
 function App() {
-  return (
-    <div className="App">
-    </div>
+  return (//когда не нужен div, но нужно положить несколько компонентов исп React.Fragment
+     <React.Fragment> 
+    <Header />
+    </React.Fragment>
   );
 }
 
