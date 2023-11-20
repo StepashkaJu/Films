@@ -16,6 +16,6 @@ nav {
   padding: 0 1rem;
 }
 
-footer {
-  
+.container-content {
+   min-height: calc(100vh - 70px - 64px); /*//минимальная высота блока контента */
 }
