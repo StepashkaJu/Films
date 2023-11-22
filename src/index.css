@@ -18,4 +18,5 @@ nav {
 
 .container-content {
    min-height: calc(100vh - 70px - 64px); /*//минимальная высота блока контента */
+   padding: 1.5rem 0;
 }
