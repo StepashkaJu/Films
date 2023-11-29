@@ -10,7 +10,7 @@ class Main extends React.Component {
   };
 
   componentDidMount() {
-    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=matrix`)
+    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=matrix`)
       .then((response) => response.json())
       .then((data) => this.setState({ movies: data.Search, loading: false })) //все загрузилось
       .cath((err) => {
@@ -21,7 +21,7 @@ class Main extends React.Component {
 
   searchMovies = (str, type = "all") => {
     fetch(
-      `http://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${
+      `https://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${
         type !== "all" ? `&type=${type}` : ""
       }`
     ) // если у нас выбрат тип вильмов не all, то в запрос добавится Get параметр c type=тот тип, который мы выбираем по радиокнопке и отобразятся нужные фильмы или сериалы, если выбран all, то в запрос просто добавится пустая строка,т.к. all выбран по умолчанию type="all"
