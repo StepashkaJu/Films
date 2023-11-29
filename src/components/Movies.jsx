@@ -1,6 +1,6 @@
 import { Movie } from "./Movie";
 function Movies(props) {
-  const { movies = [] } = props;
+  const { movies = [] } = props; //movie = [] - по умолчанию
   return (
     <div className="movies">
       {movies.length ? (
